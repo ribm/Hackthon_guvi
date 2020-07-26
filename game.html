@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container{
+      width: 600px;
+      height: 600px;
+      background-color: aqua;
+      margin-top: 0px;
+      margin-left: 400px;
+  }
+  .button{
+      width: 195px;
+      height: 195px;
+      background-color: rebeccapurple;
+      
+      border-style: solid;
+      float: left;
+      color: initial;
+      
+  }
+  .cont{
+      width: 600px;
+      height: 200px;
+      padding: 0px;
+      margin: 0px;
+      background-color:springgreen;
+      
+
+  }
+  .keybutton{
+      text-align: right;
+      font-stretch: ultra-expanded;
+      font-size: 165px;
+      border-style: none;
+      background-color: inherit;
+      margin-left: 45px;
+      
+  }
+  .button:disabled{opacity: inherit;}
+
+    </style>
+</head>
+<body>
+  <div class="start" ><button   id="start" type="button" value="START" onclick="initial_process()">START</button></div>
+  <div class="start" ><button   id= "reset" type="button" value="START" onclick="initial_process()">RESET</button></div>
+  <div class="start" ><button   id= "points" type="button" value="START">Points:</button></div>
+  <div class="rules" id="rules"><p>Click on start to play</p> <br> <p>You can reset by clicking the reset</p>
+<br> Time limit is 1 min </div>
+
+    <div class="container">
+        <div  class="cont">
+            <div  id="1st" class="button"><button  id ="1st1" class="keybutton" onclick="touch(id)"  >1</button></div>
+            <div id="2nd" class="button"><button  id ="1st2" class="keybutton" onclick="touch(id)"  >2</span></div>
+            <div id="3rd" class="button"><button  id ="1st3" class="keybutton" onclick="touch(id)"  >3</span></div>
+        </div>
+        <div  class="cont">
+            <div id="4th" class="button"><button  id ="1st4" class="keybutton" onclick="touch(id)" >4</button></div>
+            <div id="5th" class="button"><button  id ="1st5" class="keybutton" onclick="touch(id)"  >5</button></div>
+            <div id="6th" class="button"><button  id ="1st6" class="keybutton" onclick="touch(id)" >6</button></div>
+        </div>
+        <div  class="cont">
+            <div  id="7th" class="button"><button  id ="1st7" class="keybutton" onclick="touch(id)"  >7</button></div>
+            <div  id="8th" class="button"><button  id ="1st8" class="keybutton" onclick="touch(id)"  >8</button></div>
+            <div id="9nd" class="button"><button  id ="1st9" class="keybutton" onclick="touch(id)"  >9</button>
+        </div>
+        
+        
+        
+    </div>
+<script src="./puzzle.js"></script>
+   
+</body>
+</html>
